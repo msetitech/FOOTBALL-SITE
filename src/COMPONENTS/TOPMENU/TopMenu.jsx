@@ -7,7 +7,7 @@ export default function TopMenu() {
       <nav>
         <div className="logo">
           <div className="logoOnly">
-            <img src="logo192.png" alt="" />
+            <img src="images/logo.png" alt="" />
           </div>
           <div className="topmenu">
             <ul>

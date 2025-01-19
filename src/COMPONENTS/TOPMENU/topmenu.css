@@ -10,7 +10,7 @@ html {
 nav {
   height: 62px;
   width: 100%;
-  background: rgb(198, 4, 172);
+  background: #f5b7cf;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ nav ul {
 li {
   list-style: none;
   font-size: 18px;
-  color: white;
+  color: black;
   font-weight: 700;
   cursor: pointer;
 }
@@ -50,12 +50,13 @@ li {
 .logoOnly img {
   width: 100%;
   height: 100%;
+  padding: 4px;
 }
 
 .cart {
   height: 40px;
   width: 200px;
-  background: rgba(255, 255, 255, 0.356);
+  background: #fa00605e;
   border-radius: 100px;
 }
 
@@ -66,5 +67,5 @@ li {
   border: none;
   outline: none;
   padding-left: 20px;
-  color: white;
+  color: black;
 }
