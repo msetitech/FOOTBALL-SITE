@@ -3,6 +3,7 @@ import { getMatches, addMatch, matches } from "./COMPONENTS/API/mockApi";
 import AddMatch from "./AddMatch";
 import MatchCard from "./MatchCard";
 import "./App.css"; // Import the main styling
+import TopMenu from "./COMPONENTS/TOPMENU/TopMenu";
 
 function App() {
   const [matches, setMatches] = useState([]);
@@ -60,13 +61,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Football Matches</h1>
       {loading ? (
         <p>Loading...</p>
       ) : error ? (
         <p style={{ color: "red" }}>Error: {error}</p>
       ) : (
         <>
+          <TopMenu />
           <div className="matches-container">
             {matches.map((match) => (
               <MatchCard
