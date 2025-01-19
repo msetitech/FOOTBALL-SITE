@@ -4,6 +4,7 @@ import AddMatch from "./AddMatch";
 import MatchCard from "./MatchCard";
 import "./App.css";
 import TopMenu from "./COMPONENTS/TOPMENU/TopMenu";
+import Header from "./COMPONENTS/HEADER/Header";
 
 function App() {
   const [matches, setMatches] = useState([]);
@@ -66,6 +67,7 @@ function App() {
       ) : (
         <>
           <TopMenu />
+          <Header />
           <div className="matches-container">
             {matches.map((match) => (
               <MatchCard

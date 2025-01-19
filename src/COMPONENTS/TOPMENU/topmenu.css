@@ -29,9 +29,13 @@ nav ul {
 li {
   list-style: none;
   font-size: 18px;
-  color: black;
+  color: white;
   font-weight: 700;
   cursor: pointer;
+}
+
+li:hover {
+  color: black;
 }
 
 .logo {

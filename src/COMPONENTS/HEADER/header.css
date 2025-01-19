@@ -1,0 +1,86 @@
+.header {
+  background: linear-gradient(to bottom, #f5b7cf, #fff);
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.content {
+  max-width: 50%;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  background-color: #f5b7cf;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.read-more:hover {
+  background-color: #eaa4c2;
+}
+
+.next-match {
+  text-align: right;
+}
+
+.next-match p {
+  font-size: 1.2rem;
+}
+
+.next-match h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.countdown {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.results {
+  background-color: #f5b7cf;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.results h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.matches {
+  display: flex;
+  justify-content: space-around;
+}
+
+.match {
+  text-align: center;
+}
+
+.match p {
+  margin: 5px 0;
+}
