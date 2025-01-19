@@ -8,6 +8,7 @@ function AddMatch({ onAddMatch }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (homeTeam && awayTeam && utcDate) {
+      // Pass new match data to the parent component
       onAddMatch({ homeTeam, awayTeam, utcDate });
       setHomeTeam(""); // Clear inputs after submission
       setAwayTeam("");

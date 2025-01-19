@@ -28,6 +28,6 @@ export const addMatch = (newMatch) => {
     setTimeout(() => {
       matches.push({ ...newMatch, id: matches.length + 1 });
       resolve(matches);
-    }, 500); // Simulates network delay
+    }, 1000); // Simulates network delay
   });
 };
