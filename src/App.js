@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { getMatches, addMatch } from "./mockApi"; // Using mockApi for simulation
+import { getMatches, addMatch, matches } from "./COMPONENTS/API/mockApi";
 import AddMatch from "./AddMatch";
+import MatchCard from "./MatchCard";
+import "./App.css"; // Import the main styling
 
 function App() {
   const [matches, setMatches] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch data from localStorage or mock API when the component mounts
+  // Fetch matches from localStorage or mock API
   useEffect(() => {
     const fetchMatches = async () => {
       setLoading(true);
       try {
         const savedMatches = JSON.parse(localStorage.getItem("matches"));
         if (savedMatches) {
-          setMatches(savedMatches); // Load matches from localStorage if available
+          setMatches(savedMatches);
         } else {
-          const data = await getMatches(); // Fetch initial matches if nothing is saved
+          const data = await getMatches();
           setMatches(data);
         }
       } catch (err) {
@@ -29,21 +31,31 @@ function App() {
     fetchMatches();
   }, []);
 
-  // Function to add a new match
   const handleAddMatch = async (newMatch) => {
     try {
-      // Simulate adding the match (we can update matches using addMatch here)
       const updatedMatches = [
         ...matches,
         { ...newMatch, id: matches.length + 1 },
       ];
-      setMatches(updatedMatches); // Update matches in state
-
-      // Save updated matches in localStorage
+      setMatches(updatedMatches);
       localStorage.setItem("matches", JSON.stringify(updatedMatches));
     } catch (err) {
       setError("Failed to add match.");
     }
+  };
+
+  const handleDeleteMatch = (matchId) => {
+    const updatedMatches = matches.filter((match) => match.id !== matchId);
+    setMatches(updatedMatches);
+    localStorage.setItem("matches", JSON.stringify(updatedMatches)); // Update localStorage
+  };
+
+  const handleViewMatch = (matchId) => {
+    const match = matches.find((match) => match.id === matchId);
+    alert(
+      `Viewing details for: ${match.homeTeam.name} vs ${match.awayTeam.name}`
+    );
+    // You can expand this to show detailed match info in a modal or another page
   };
 
   return (
@@ -55,15 +67,16 @@ function App() {
         <p style={{ color: "red" }}>Error: {error}</p>
       ) : (
         <>
-          <ul>
+          <div className="matches-container">
             {matches.map((match) => (
-              <li key={match.id}>
-                <strong>{match.homeTeam}</strong> vs{" "}
-                <strong>{match.awayTeam}</strong> -{" "}
-                {new Date(match.utcDate).toLocaleString()}
-              </li>
+              <MatchCard
+                key={match.id}
+                match={match}
+                onDelete={handleDeleteMatch}
+                onView={handleViewMatch}
+              />
             ))}
-          </ul>
+          </div>
           <AddMatch onAddMatch={handleAddMatch} />
         </>
       )}
