@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getMatches, addMatch, matches } from "./COMPONENTS/API/mockApi";
 import AddMatch from "./AddMatch";
 import MatchCard from "./MatchCard";
-import "./App.css"; // Import the main styling
+import "./App.css";
 import TopMenu from "./COMPONENTS/TOPMENU/TopMenu";
 
 function App() {
@@ -10,7 +10,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch matches from localStorage or mock API
   useEffect(() => {
     const fetchMatches = async () => {
       setLoading(true);
@@ -56,7 +55,6 @@ function App() {
     alert(
       `Viewing details for: ${match.homeTeam.name} vs ${match.awayTeam.name}`
     );
-    // You can expand this to show detailed match info in a modal or another page
   };
 
   return (
