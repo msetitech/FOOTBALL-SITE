@@ -13,10 +13,20 @@ export const matches = [
   },
 ];
 
-// Simulating an API call
+// Simulating an API call to fetch matches
 export const getMatches = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
+      resolve(matches);
+    }, 500); // Simulates network delay
+  });
+};
+
+// Simulating an API call to add a new match
+export const addMatch = (newMatch) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      matches.push({ ...newMatch, id: matches.length + 1 });
       resolve(matches);
     }, 500); // Simulates network delay
   });
