@@ -10,7 +10,7 @@ html {
 nav {
   height: 62px;
   width: 100%;
-  background: #f5b7cf;
+  background: #010101;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +35,7 @@ li {
 }
 
 li:hover {
-  color: black;
+  color: #f5b7cf;
 }
 
 .logo {
@@ -60,7 +60,7 @@ li:hover {
 .cart {
   height: 40px;
   width: 200px;
-  background: #fa00605e;
+  background: #f7a7c4c7;
   border-radius: 100px;
 }
 

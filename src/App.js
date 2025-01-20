@@ -10,6 +10,7 @@ function App() {
   const [matches, setMatches] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [isOpenMetch, setisOpenMetch] = useState(false);
 
   useEffect(() => {
     const fetchMatches = async () => {
@@ -68,6 +69,8 @@ function App() {
         <>
           <TopMenu />
           <Header />
+
+          {isOpenMetch && <AddMatch onAddMatch={handleAddMatch} />}
           <div className="matches-container">
             {matches.map((match) => (
               <MatchCard
@@ -78,7 +81,6 @@ function App() {
               />
             ))}
           </div>
-          <AddMatch onAddMatch={handleAddMatch} />
         </>
       )}
     </div>

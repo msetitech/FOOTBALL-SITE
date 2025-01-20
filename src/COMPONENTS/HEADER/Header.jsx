@@ -1,5 +1,12 @@
 import React from "react";
+import "./header.css";
 
 export default function Header() {
-  return <div>Header</div>;
+  return (
+    <div>
+      <header>
+        <img src="images/background.png" alt="" />
+      </header>
+    </div>
+  );
 }
