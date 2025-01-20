@@ -6,6 +6,7 @@ import "./App.css";
 import TopMenu from "./COMPONENTS/TOPMENU/TopMenu";
 import Header from "./COMPONENTS/HEADER/Header";
 import AboutSection from "./COMPONENTS/ABOUTSECTION/AboutSection";
+import Trophy from "./COMPONENTS/TROPHY/Trophy";
 
 function App() {
   const [matches, setMatches] = useState([]);
@@ -71,6 +72,7 @@ function App() {
           <TopMenu />
           <Header />
           <AboutSection />
+          <Trophy />
 
           {isOpenMetch && <AddMatch onAddMatch={handleAddMatch} />}
           <div className="matches-container">
