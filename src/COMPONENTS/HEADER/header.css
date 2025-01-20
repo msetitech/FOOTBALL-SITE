@@ -130,3 +130,8 @@ header img {
 .bottomOfHeader {
   padding: 0px 6%;
 }
+
+.bottomOfHeader {
+  padding: 40px;
+  height: auto;
+}

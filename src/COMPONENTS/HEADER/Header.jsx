@@ -11,14 +11,14 @@ const lastMatchesResults = [
   },
   {
     logoOne: "images/logo.png",
-    dateOfMatch: "October 11 2023",
+    dateOfMatch: "Oct 11 2023",
     matchResult: "5 - 1",
     leagueType: "Champions Cup",
     logoTwo: "images/logo3.png",
   },
   {
     logoOne: "images/logo1.png",
-    dateOfMatch: "November 11 2023",
+    dateOfMatch: "Nov 11 2023",
     matchResult: "3 - 3",
     leagueType: "Champions Cup",
     logoTwo: "images/logo.png",
@@ -30,7 +30,7 @@ export default function Header() {
     <div>
       <header>
         <div className="imageHeader">
-          <img src="images/background.png" alt="" />
+          <img src="images/orginal.png" alt="" />
         </div>
         <div className="conteined">
           <div className="leftcontentHeader">
