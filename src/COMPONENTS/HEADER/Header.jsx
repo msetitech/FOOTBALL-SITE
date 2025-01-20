@@ -48,6 +48,21 @@ export default function Header() {
           </div>
         </div>
       </header>
+      <div className="bottomOfHeader">
+        <div className="matchresults">
+          <div className="TeamLogo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div className="resultShown">
+            <p>July 11 2018</p>
+            <h1>3 - 1</h1>
+            <p>Champions cup</p>
+          </div>
+          <div className="TeamLogo">
+            <img src="images/logo.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
