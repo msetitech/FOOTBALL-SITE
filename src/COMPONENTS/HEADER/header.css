@@ -1,10 +1,91 @@
 header {
   height: calc(100vh - 100px);
-  object-fit: contain;
   width: 100%;
+  position: relative;
+}
+
+.imageHeader {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 header img {
   width: 100%;
   height: 100%;
+}
+
+.conteined {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  padding: 20px 6%;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightContentHeader {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  width: 450px;
+  align-self: flex-end;
+  bottom: 0px;
+  border-radius: 6px;
+  background: rgba(143, 143, 143, 0.883);
+}
+
+.Day-Min-Sec,
+.leftDay {
+  display: flex;
+}
+
+.Day-Min-Sec {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.leftcontentHeader {
+  width: 400px;
+}
+
+.leftcontentHeader h1 {
+  font-size: 48px;
+}
+
+.next h1 {
+  font-size: 20px;
+}
+
+.next {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  padding: 0px 12px;
+  border-right: 2px dashed rgb(255, 255, 255);
+}
+
+.leftDay {
+  padding: 0px 12px;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.leftcontentHeader button {
+  height: 48px;
+  width: 200px;
+  background: #f89fc0;
+  color: black;
+  margin-top: 10px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: none;
+}
+
+.leftcontentHeader button:hover {
+  background: black;
+  color: #f89fc0;
 }
