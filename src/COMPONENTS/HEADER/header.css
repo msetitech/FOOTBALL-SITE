@@ -93,4 +93,25 @@ header img {
 .bottomOfHeader {
   background: #f5f5f5;
   height: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.matchresults {
+  background: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.TeamLogo {
+  height: 100%;
+  object-fit: contain;
+}
+
+.TeamLogo img {
+  width: 100%;
+  height: 100%;
 }

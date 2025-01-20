@@ -62,6 +62,36 @@ export default function Header() {
             <img src="images/logo.png" alt="" />
           </div>
         </div>
+        <div className="matchresults">
+          <div className="TeamLogo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div className="resultShown">
+            <p>July 11 2018</p>
+            <h1>3 - 1</h1>
+            <p>Champions cup</p>
+          </div>
+          <div className="TeamLogo">
+            <img src="images/logo.png" alt="" />
+          </div>
+        </div>
+        <div className="matchresults">
+          <div className="TeamLogo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div className="resultShown">
+            <p>July 11 2018</p>
+            <h1>3 - 1</h1>
+            <p>Champions cup</p>
+          </div>
+          <div className="TeamLogo">
+            <img src="images/logo.png" alt="" />
+          </div>
+        </div>
+        <div className="resultLastMatch">
+          <h4>Result</h4>
+          <h1>THE LAST MATCH</h1>
+        </div>
       </div>
     </div>
   );
