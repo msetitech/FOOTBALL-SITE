@@ -21,7 +21,6 @@ export const getMatches = () => {
   });
 };
 
-//call api to add mecth
 export const addMatch = (newMatch) => {
   return new Promise((resolve) => {
     setTimeout(() => {
