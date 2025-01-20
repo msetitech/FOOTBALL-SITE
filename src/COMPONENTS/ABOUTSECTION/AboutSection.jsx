@@ -10,15 +10,16 @@ export default function AboutSection() {
           <div className="imageaboutsection">
             <img src="about.png" alt="" />
           </div>
-
-          <div className="icon">
-            <Star></Star>
-            <div className="opt">
-              <h4>Optimised Team</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Cumque, esse.
-              </p>
+          <div className="coverImage">
+            <div className="icon">
+              <Star></Star>
+              <div className="opt">
+                <h4>Optimised Team</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Cumque, esse.
+                </p>
+              </div>
             </div>
           </div>
         </div>
