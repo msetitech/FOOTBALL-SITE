@@ -13,6 +13,7 @@ header {
 header img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .conteined {
@@ -45,6 +46,7 @@ header img {
 .Day-Min-Sec {
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .leftcontentHeader {
@@ -65,7 +67,7 @@ header img {
   width: 40%;
   height: 100%;
   padding: 0px 12px;
-  border-right: 2px dashed rgb(255, 255, 255);
+  border-right: 2px dashed #010102;
 }
 
 .leftDay {
@@ -92,7 +94,7 @@ header img {
 
 .bottomOfHeader {
   background: #e4dddd;
-  /* background: #ff0000; */
+  /* background: #010101; */
   height: 320px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -102,6 +104,7 @@ header img {
 }
 
 .matchresults {
+  background: #f89fc0;
   background: white;
   height: 120px;
   display: flex;
@@ -132,6 +135,7 @@ header img {
 }
 
 .bottomOfHeader {
+  border-top: 4px solid #f89fc0;
   padding: 40px;
   height: auto;
 }

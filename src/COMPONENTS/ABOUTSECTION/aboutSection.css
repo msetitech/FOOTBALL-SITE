@@ -1,0 +1,60 @@
+.aboutsection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+body {
+  background: #fce4ff;
+}
+.socialmedia {
+  display: flex;
+  align-items: center;
+}
+
+.aboutsection {
+  padding: 0px 3%;
+  position: relative;
+}
+.leftAboutSection {
+  background: black;
+  height: 600px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.imageaboutsection {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.imageaboutsection img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.coverImage {
+  position: absolute;
+  background: white;
+}
+
+.icon {
+  background: #f89fc0;
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  height: 100px;
+  width: 50%;
+  border-radius: 6px;
+  display: flex;
+  padding: 10px;
+}
+
+.icon svg {
+  background: black;
+  color: #f89fc0;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+}
