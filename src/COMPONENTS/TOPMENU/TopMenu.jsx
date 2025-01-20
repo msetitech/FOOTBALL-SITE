@@ -1,5 +1,6 @@
 import React from "react";
 import "./topmenu.css";
+import { Search } from "@mui/icons-material";
 
 export default function TopMenu() {
   return (
@@ -20,6 +21,7 @@ export default function TopMenu() {
         </div>
         <div className="cart">
           <input type="search" placeholder="search here ...." />
+          <Search></Search>
         </div>
       </nav>
     </div>
