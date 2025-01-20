@@ -124,3 +124,7 @@ header img {
   align-items: center;
   flex-direction: column;
 }
+
+.bottomOfHeader {
+  padding: 6% 0px;
+}
