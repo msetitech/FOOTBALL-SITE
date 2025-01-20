@@ -3,7 +3,7 @@ import React from "react";
 const trophys = [
   {
     trophyIcon: <EmojiEvents />,
-    trophyNumber: 4,
+    trophyNumber: 2,
     trophyName: "World Cup",
   },
   {

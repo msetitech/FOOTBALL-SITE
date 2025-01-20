@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function FixtureAndResults() {
-  return <div>Fixture</div>;
+export default function FixtureComp() {
+  return <div>here goes FIxture components</div>;
 }
