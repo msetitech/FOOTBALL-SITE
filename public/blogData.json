@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Lionel Messi Joins Inter Miami",
+    "author": "John Doe",
+    "date": "2023-08-15",
+    "content": "Lionel Messi's arrival at Inter Miami has transformed the club, bringing global attention and incredible talent to the team.",
+    "image": "images/messi_intermiami.jpg",
+    "avatar": "images/authors/johndoe.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Inter Miami Wins Championship!",
+    "author": "Jane Smith",
+    "date": "2023-10-20",
+    "content": "Inter Miami celebrated an incredible victory, taking home the championship trophy after a stunning performance in the final match.",
+    "image": "images/championship.jpg",
+    "avatar": "images/authors/janesmith.jpg"
+  },
+  {
+    "id": 3,
+    "title": "New Stadium Announced",
+    "author": "Alex Johnson",
+    "date": "2023-09-10",
+    "content": "Inter Miami has announced plans to build a state-of-the-art stadium, showcasing their commitment to the future of soccer in the U.S.",
+    "image": "images/new_stadium.jpg",
+    "avatar": "images/authors/alexjohnson.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Top 5 Goals of the Season",
+    "author": "Chris Lee",
+    "date": "2023-12-01",
+    "content": "Relive the top 5 goals scored by Inter Miami players this season. From Messi's magical moments to Higuaín's powerful strikes!",
+    "image": "images/top_goals.jpg",
+    "avatar": "images/authors/chrislee.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Inter Miami Academy: A Bright Future",
+    "author": "Emily Davis",
+    "date": "2024-01-05",
+    "content": "The Inter Miami academy continues to nurture young talent, shaping the future stars of soccer. Learn more about their development program.",
+    "image": "images/academy.jpg",
+    "avatar": "images/authors/emilydavis.jpg"
+  }
+]

@@ -5,7 +5,6 @@ import Trophy from "./COMPONENTS/TROPHY/Trophy";
 import FixtureAndResults from "./COMPONENTS/FIXTUREANDRESULTS/FixtureAndResults";
 import TeamLegend from "./COMPONENTS/TEAMLEGEND/TeamLegend";
 import MatchSchedule from "./COMPONENTS/MATCHSCHEDULE/MatchSchedule";
-import Footer from "./COMPONENTS/FOOTER/Footer";
 
 export default function HomeComponent() {
   return (

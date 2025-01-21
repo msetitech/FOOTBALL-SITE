@@ -1,6 +1,7 @@
 import React from "react";
 import "./topmenu.css";
 import { Search } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 export default function TopMenu() {
   return (
@@ -12,10 +13,26 @@ export default function TopMenu() {
           </div>
           <div className="topmenu">
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-              <li>Blog</li>
+              <li>
+                <Link to="/" className="link">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="link">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="link">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/shop" className="link">
+                  Shop
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -26,15 +26,16 @@ nav ul {
   gap: 40px;
 }
 
-nav ul li {
+.link {
+  text-decoration: none;
   list-style: none;
   font-size: 18px;
-  color: white;
+  color: gray;
   font-weight: 700;
   cursor: pointer;
 }
 
-li:hover {
+.link:hover {
   color: #f5b7cf;
 }
 

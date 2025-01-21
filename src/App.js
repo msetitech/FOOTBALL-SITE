@@ -1,23 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import TopMenu from "./COMPONENTS/TOPMENU/TopMenu";
 import Footer from "./COMPONENTS/FOOTER/Footer";
 import HomeComponent from "./HomeComponent";
+import About from "./About";
+import Blog from "./Blog";
+import Shop from "./Shop";
 
 function App() {
   return (
-    <div>
-      <>
+    <Router>
+      <div>
         <div className="tpmenu">
           <TopMenu />
         </div>
         <div className="otherContent">
-          <HomeComponent />
+          <Routes>
+            <Route path="/" element={<HomeComponent />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/shop" element={<Shop />} />
+          </Routes>
         </div>
-
         <Footer />
-      </>
-    </div>
+      </div>
+    </Router>
   );
 }
 
