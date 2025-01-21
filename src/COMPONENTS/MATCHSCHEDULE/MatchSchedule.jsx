@@ -36,7 +36,7 @@ export default function MatchSchedule() {
           <div className="deatilsSchedule">
             <h3>Champion League</h3>
             <h2>Mkapa Stadium</h2>
-            <h3>January 23 2025 20:00</h3>
+            <h3>Jan 23 2025 20:00</h3>
           </div>
           <div className="btns">
             <button>View Match</button>
@@ -58,7 +58,7 @@ export default function MatchSchedule() {
           <div className="deatilsSchedule">
             <h3>Champion League</h3>
             <h2>Mkapa Stadium</h2>
-            <h3>January 23 2025 20:00</h3>
+            <h3>Jan 23 2025 20:00</h3>
           </div>
           <div className="btns">
             <button>View Match</button>

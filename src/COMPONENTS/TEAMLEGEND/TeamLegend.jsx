@@ -5,28 +5,28 @@ import { Close } from "@mui/icons-material";
 const teamLegends = [
   {
     id: 1,
-    image: "images/mess.png",
+    image: "images/messimage.png",
     name: "Lionel Mess",
-    position: "striker",
+    position: "Right Winger",
     description: "lorem lorem orem",
   },
   {
     id: 2,
-    image: "images/mess.png",
+    image: "images/rojas.png",
     name: "Neymer Jr",
     position: "striker",
     description: "lorem lorem orem",
   },
   {
     id: 3,
-    image: "images/mess.png",
+    image: "images/searez.png",
     name: " Ronaldo",
     position: "striker",
     description: "lorem lorem orem",
   },
   {
     id: 4,
-    image: "images/mess.png",
+    image: "images/jord.png",
     name: "Lionel Mess",
     position: "striker",
     description: "lorem lorem orem",

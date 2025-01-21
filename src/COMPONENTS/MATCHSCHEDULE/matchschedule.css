@@ -74,7 +74,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 100%;
   color: gray;
 }
@@ -86,6 +86,7 @@
 
 .deatilsSchedule h3 {
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .topmetchschdule {

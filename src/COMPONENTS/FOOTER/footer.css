@@ -1,0 +1,39 @@
+footer {
+  background: black;
+  width: 100%;
+  /* color: #f89fc0; */
+  color: white;
+  padding: 3% 6%;
+}
+
+.topFooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 80px;
+}
+.leftTopFooter {
+  height: 600px;
+  object-fit: contain;
+}
+
+.leftTopFooter h1 {
+  border-left: 6px solid #f89fc0;
+  padding-left: 10px;
+  font-weight: 500;
+}
+.leftTopFooter img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.nameandIcon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.singleFanTweets p {
+  font-size: 14px;
+}
