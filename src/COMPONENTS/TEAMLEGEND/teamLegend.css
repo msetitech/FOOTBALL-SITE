@@ -51,7 +51,7 @@
 /* STYLE FOR POP UP LEGENDE */
 
 .teamLegendPopUp {
-  background: #000000b0;
+  background: #11181fa8;
   width: 100%;
   height: 100%;
   z-index: 99;
@@ -76,7 +76,7 @@
   top: 50px;
   right: 50px;
   background: #f89fc0;
-  color: black;
+  color: #11181f;
   border-radius: 100%;
   height: 50px;
   width: 50px;
@@ -88,7 +88,7 @@
 .closePopBtn:hover {
   width: 60px;
   height: 60px;
-  background: black;
+  background: #11181f;
   color: #f89fc0;
   transition: all ease-in-out 0.3s;
 }

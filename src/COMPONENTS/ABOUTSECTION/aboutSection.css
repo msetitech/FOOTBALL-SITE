@@ -18,7 +18,7 @@ body {
   position: relative;
 }
 .leftAboutSection {
-  background: black;
+  background: #11181f;
   height: 600px;
   border-radius: 6px;
   position: relative;
@@ -60,7 +60,7 @@ body {
 }
 
 .icon svg {
-  background: black;
+  background: #11181f;
   color: #f89fc0;
   height: 70px;
   width: 70px;
@@ -84,13 +84,13 @@ body {
   width: 36px;
   padding: 5px;
   border-radius: 6px;
-  background: black;
+  background: #11181f;
   color: white;
 }
 
 .socialmedia svg:hover {
   background: #f89fc0;
-  color: black;
+  color: #11181f;
   cursor: pointer;
 }
 
@@ -107,7 +107,7 @@ body {
 .trophyConteiner {
   display: flex;
   width: 100%;
-  background: black;
+  background: #11181f;
   padding: 20px 6%;
   color: #f89fc0;
   margin-top: 40px;

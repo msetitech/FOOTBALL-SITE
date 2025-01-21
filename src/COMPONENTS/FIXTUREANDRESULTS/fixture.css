@@ -5,8 +5,8 @@
   background: white;
   display: flex;
   align-items: center;
-  border-bottom: 4px solid #a5a5a5;
-  box-shadow: 1px 2px 10px #a5a5a5;
+  /* border-bottom: 4px solid #11181f; */
+  box-shadow: 1px 2px 10px #11181f49;
 }
 
 .topmenusFixture ul {
@@ -32,11 +32,12 @@
 }
 .table h1 {
   height: auto;
-  background: black;
+  background: #11181f;
   color: #f89fc0;
   padding: 10px;
   font-weight: 600;
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 table {
