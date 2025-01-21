@@ -1,8 +1,56 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./matchschedule.css";
 import { Add } from "@mui/icons-material";
 
 export default function MatchSchedule() {
+  const [schedule, setSchedule] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+  const [newMatch, setNewMatch] = useState({
+    type: "home",
+    team1: "Inter Miami",
+    team2: "",
+    time: "",
+    stadium: "",
+    logo1: "images/logo.png",
+    logo2: "",
+  });
+
+  // Load schedule from local storage
+  useEffect(() => {
+    const storedSchedule = JSON.parse(localStorage.getItem("schedule")) || [];
+    setSchedule(storedSchedule);
+  }, []);
+
+  // Save schedule to local storage whenever it updates
+  useEffect(() => {
+    localStorage.setItem("schedule", JSON.stringify(schedule));
+  }, [schedule]);
+
+  // Handle input changes for the modal
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setNewMatch((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // Add a new match
+  const addMatch = () => {
+    const updatedMatch = {
+      ...newMatch,
+      logo1: newMatch.type === "home" ? "images/logo.png" : newMatch.logo1,
+    };
+    setSchedule((prev) => [...prev, updatedMatch]);
+    setShowModal(false);
+    setNewMatch({
+      type: "home",
+      team1: "Inter Miami",
+      team2: "",
+      time: "",
+      stadium: "",
+      logo1: "images/logo.png",
+      logo2: "",
+    });
+  };
+
   return (
     <div className="allschedule">
       <div className="topmetchschdule">
@@ -15,57 +63,97 @@ export default function MatchSchedule() {
           </p>
         </div>
         <div className="rightSchedule">
-          <button>
+          <button onClick={() => setShowModal(true)}>
             <Add></Add> Add Match
           </button>
         </div>
       </div>
       <div className="matchscheduleRenderArea">
-        <div className="singleschedule">
-          <div className="teamsMatching">
-            <div className="hometeam">
-              <img src="images/logo.png" alt="" />
-              <h6>Inter Miami</h6>
+        {schedule.map((match, index) => (
+          <div className="singleschedule" key={index}>
+            <div className="teamsMatching">
+              <div className="hometeam">
+                <img src={match.logo1} alt="" />
+                <h6>{match.team1}</h6>
+              </div>
+              <h1>VS</h1>
+              <div className="awayteam">
+                <img src={match.logo2} alt="" />
+                <h6>{match.team2}</h6>
+              </div>
             </div>
-            <h1>VS</h1>
-            <div className="awayteam">
-              <img src="images/logo3.png" alt="" />
-              <h6>Inter Miami</h6>
+            <div className="deatilsSchedule">
+              <h3>{match.type === "home" ? "Home Match" : "Away Match"}</h3>
+              <h2>{match.stadium}</h2>
+              <h3>{match.time}</h3>
             </div>
-          </div>
-          <div className="deatilsSchedule">
-            <h3>Champion League</h3>
-            <h2>Mkapa Stadium</h2>
-            <h3>Jan 23 2025 20:00</h3>
-          </div>
-          <div className="btns">
-            <button>View Match</button>
-            <button>Delete Match</button>
-          </div>
-        </div>
-        <div className="singleschedule">
-          <div className="teamsMatching">
-            <div className="hometeam">
-              <img src="images/logo.png" alt="" />
-              <h6>Inter Miami</h6>
-            </div>
-            <h1>VS</h1>
-            <div className="awayteam">
-              <img src="images/logo3.png" alt="" />
-              <h6>Inter Miami</h6>
+            <div className="btns">
+              <button>View Match</button>
+              <button
+                onClick={() =>
+                  setSchedule((prev) => prev.filter((_, i) => i !== index))
+                }
+              >
+                Delete Match
+              </button>
             </div>
           </div>
-          <div className="deatilsSchedule">
-            <h3>Champion League</h3>
-            <h2>Mkapa Stadium</h2>
-            <h3>Jan 23 2025 20:00</h3>
-          </div>
-          <div className="btns">
-            <button>View Match</button>
-            <button>Delete Match</button>
-          </div>
-        </div>
+        ))}
       </div>
+
+      {showModal && (
+        <div className="modal">
+          <div className="modalContent">
+            <h2>Add New Match</h2>
+            <input
+              type="text"
+              name="team2"
+              placeholder="Second Team Name"
+              value={newMatch.team2}
+              onChange={handleInputChange}
+            />
+            <input
+              type="text"
+              name="stadium"
+              placeholder="Stadium Name"
+              value={newMatch.stadium}
+              onChange={handleInputChange}
+            />
+            <input
+              type="datetime-local"
+              name="time"
+              value={newMatch.time}
+              onChange={handleInputChange}
+            />
+            <select
+              name="type"
+              value={newMatch.type}
+              onChange={handleInputChange}
+            >
+              <option value="home">Home</option>
+              <option value="away">Away</option>
+            </select>
+            {newMatch.type === "away" && (
+              <input
+                type="text"
+                name="logo1"
+                placeholder="First Team Logo URL"
+                value={newMatch.logo1}
+                onChange={handleInputChange}
+              />
+            )}
+            <input
+              type="text"
+              name="logo2"
+              placeholder="Second Team Logo URL"
+              value={newMatch.logo2}
+              onChange={handleInputChange}
+            />
+            <button onClick={addMatch}>Save Match</button>
+            <button onClick={() => setShowModal(false)}>Cancel</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
