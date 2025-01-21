@@ -9,6 +9,7 @@ import AboutSection from "./COMPONENTS/ABOUTSECTION/AboutSection";
 import Trophy from "./COMPONENTS/TROPHY/Trophy";
 import FixtureAndResults from "./COMPONENTS/FIXTUREANDRESULTS/FixtureAndResults";
 import TeamLegend from "./COMPONENTS/TEAMLEGEND/TeamLegend";
+import MatchSchedule from "./COMPONENTS/MATCHSCHEDULE/MatchSchedule";
 
 function App() {
   const [matches, setMatches] = useState([]);
@@ -77,7 +78,7 @@ function App() {
           <Trophy />
           <FixtureAndResults />
           <TeamLegend />
-
+          <MatchSchedule />
           {isOpenMetch && <AddMatch onAddMatch={handleAddMatch} />}
           <div className="matches-container">
             {matches.map((match) => (

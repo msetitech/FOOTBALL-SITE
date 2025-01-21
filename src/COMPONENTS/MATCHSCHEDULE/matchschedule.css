@@ -1,0 +1,98 @@
+.allschedule {
+  padding: 40px 6%;
+}
+.singleschedule {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background: #e4dddd;
+  padding: 10px;
+}
+
+.singleschedule:nth-child(odd) {
+  background: white;
+  height: 100px;
+}
+
+.singleschedule h1 {
+  color: gray;
+}
+
+.hometeam,
+.awayteam {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hometeam img,
+.awayteam img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.matchscheduleRenderArea {
+  margin-top: 40px;
+  outline: 1px solid rgb(160, 160, 160);
+  height: auto;
+}
+
+.teamsMatching {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.btns {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.deatilsSchedule {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  color: gray;
+}
+
+.deatilsSchedule h2 {
+  color: black;
+  font-weight: 600;
+}
+
+.deatilsSchedule h3 {
+  text-transform: uppercase;
+}
+
+.topmetchschdule {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.rightSchedule button {
+  height: 48px;
+  background: none;
+  border: 1px solid black;
+  color: black;
+  display: flex;
+  align-items: center;
+  float: right;
+  font-weight: 700;
+}
+
+.rightSchedule button:hover {
+  background: black;
+  color: #f89fc0;
+}

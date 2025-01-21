@@ -12,7 +12,7 @@ const lastMatchesResults = [
   {
     logoOne: "images/logo.png",
     dateOfMatch: "Oct 11 2023",
-    matchResult: "5 - 1",
+    matchResult: "5 - 3",
     leagueType: "Champions Cup",
     logoTwo: "images/logo3.png",
   },

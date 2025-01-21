@@ -8,24 +8,28 @@ const teamLegends = [
     image: "images/mess.png",
     name: "Lionel Mess",
     position: "striker",
+    description: "lorem lorem orem",
   },
   {
     id: 2,
     image: "images/mess.png",
-    name: "Lionel Mess",
+    name: "Neymer Jr",
     position: "striker",
+    description: "lorem lorem orem",
   },
   {
     id: 3,
     image: "images/mess.png",
-    name: "Lionel Mess",
+    name: " Ronaldo",
     position: "striker",
+    description: "lorem lorem orem",
   },
   {
     id: 4,
     image: "images/mess.png",
     name: "Lionel Mess",
     position: "striker",
+    description: "lorem lorem orem",
   },
 ];
 let newLegend = [];

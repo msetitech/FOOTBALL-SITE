@@ -139,3 +139,7 @@ header img {
   /* padding: 40px; */
   height: auto;
 }
+
+.matchresults p {
+  font-size: 14px;
+}
