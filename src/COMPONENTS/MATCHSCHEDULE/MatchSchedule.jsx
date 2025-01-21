@@ -89,11 +89,6 @@ export default function MatchSchedule() {
     });
   };
 
-  const addToCart = (match) => {
-    console.log("Added to cart:", match);
-    alert(`Added to cart: ${match.team1} vs ${match.team2}`);
-  };
-
   return (
     <div className="allschedule">
       <div className="topmetchschdule">
@@ -131,7 +126,6 @@ export default function MatchSchedule() {
               <h3>{match.time}</h3>
             </div>
             <div className="btns">
-              <button onClick={() => addToCart(match)}>Add to Cart</button>
               <button
                 onClick={() => setEditingIndex(index) || setShowModal(true)}
               >
