@@ -32,9 +32,30 @@ footer {
 .nameandIcon {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+.nameandIcon svg {
+  background: #f89fc0;
+  color: black;
+  padding: 4px;
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
 }
 
 .singleFanTweets p {
   font-size: 14px;
+}
+
+.singleFanTweets {
+  margin-top: 20px;
+  border-bottom: 1px dashed rgb(46, 46, 46);
+  padding: 10px 0px;
+}
+
+.rightTopFooter h1 {
+  border-left: 6px solid #f89fc0;
+  padding-left: 10px;
+  font-weight: 500;
 }

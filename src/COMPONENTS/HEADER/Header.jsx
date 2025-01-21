@@ -69,9 +69,9 @@ export default function Header() {
               INTER MIAMI <br /> FOOTBALL CLUB{" "}
             </h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio ad
-              sapiente architecto vel laudantium error beatae sed nobis repellat
-              in fugit voluptates
+              "Inter Miami CF has become a home for football legends, including
+              global icons like David Beckham, who co-founded the club with a
+              vision to elevate South Florida’s soccer scene"
             </p>
             <button>Read More</button>
           </div>

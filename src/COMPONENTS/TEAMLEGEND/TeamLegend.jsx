@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./teamLegend.css";
 import TeamLegendPopUP from "./TeamLegendPopUP";
-import { Close } from "@mui/icons-material";
+import { Close, Visibility } from "@mui/icons-material";
 const teamLegends = [
   {
     id: 1,
@@ -89,6 +89,12 @@ export default function TeamLegend() {
                 <img src={legend.image} alt="" />
               </div>
               <div className="desscription">
+                <div className="detailsViewLegend">
+                  <p>
+                    <Visibility></Visibility>
+                    Vies Details
+                  </p>
+                </div>
                 <h1>{legend.name}</h1>
                 <p>{legend.position}</p>
               </div>

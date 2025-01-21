@@ -72,3 +72,14 @@ td:nth-child(7),
 td:nth-child(8) {
   background: #f2f6f7;
 }
+
+.league-results td:nth-child(1),
+.league-results td:nth-child(3),
+.league-results td:nth-child(4),
+.fixture-list td:nth-child(1),
+.fixture-list td:nth-child(3),
+.fixture-list td:nth-child(4) {
+  width: 150px;
+  text-align: start;
+  padding-left: 10px;
+}

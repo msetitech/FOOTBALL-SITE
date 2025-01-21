@@ -1,38 +1,68 @@
 import React from "react";
 
-export default function Result() {
+const leagueResults = [
+  {
+    date: "Jan 14, 2025",
+    homeTeam: "Inter Miami",
+    awayTeam: "Arsenal",
+    homeScore: 3,
+    awayScore: 1,
+  },
+  {
+    date: "Jan 13, 2025",
+    homeTeam: "Liverpool",
+    awayTeam: "Inter Miami",
+    homeScore: 2,
+    awayScore: 2,
+  },
+  {
+    date: "Jan 12, 2025",
+    homeTeam: "Leicester City",
+    awayTeam: "Inter Miami",
+    homeScore: 1,
+    awayScore: 0,
+  },
+  {
+    date: "Jan 11, 2025",
+    homeTeam: "Tottenham",
+    awayTeam: "Inter Miami",
+    homeScore: 3,
+    awayScore: 2,
+  },
+  {
+    date: "Jan 10, 2025",
+    homeTeam: "Aston Villa",
+    awayTeam: "Inter Miami",
+    homeScore: 1,
+    awayScore: 3,
+  },
+];
+
+export default function LeagueResults() {
   return (
     <div>
-      <div className="table">
-        <h1>BARCLAYS PREMIER LEAGUE 2025/26</h1>
+      <div className="league-results table">
+        <h1>Recent League Results</h1>
         <table>
           <thead>
             <tr>
-              <td>Pos</td>
-              <td>Team</td>
-              <td>P</td>
-              <td>W</td>
-              <td>D</td>
-              <td>L</td>
-              <td>F</td>
-              <td>A</td>
-              <td>+/-</td>
-              <td>Pts</td>
+              <td>Date</td>
+              <td>Home Team</td>
+              <td>Score</td>
+              <td>Away Team</td>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Leicester City</td>
-              <td>13</td>
-              <td>8</td>
-              <td>4</td>
-              <td>1</td>
-              <td>28</td>
-              <td>20</td>
-              <td>8</td>
-              <td>28</td>
-            </tr>
+            {leagueResults.map((result, index) => (
+              <tr key={index}>
+                <td>{result.date}</td>
+                <td>{result.homeTeam}</td>
+                <td>
+                  {result.homeScore} - {result.awayScore}
+                </td>
+                <td>{result.awayTeam}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
