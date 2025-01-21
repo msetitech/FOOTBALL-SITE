@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
 
 const lastMatchesResults = [
@@ -26,6 +26,37 @@ const lastMatchesResults = [
 ];
 
 export default function Header() {
+  const nextMatchDate = new Date("January 25, 2025 18:00:00"); // Set the date of the next match
+  const [countdown, setCountdown] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date();
+      const difference = nextMatchDate - now;
+
+      if (difference <= 0) {
+        clearInterval(interval); // Stop the countdown when the match time is reached
+      } else {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (difference % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+        setCountdown({ days, hours, minutes, seconds });
+      }
+    }, 1000); // Update every second
+
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
+  }, []);
+
   return (
     <div>
       <header>
@@ -53,19 +84,19 @@ export default function Header() {
             </div>
             <div className="leftDay">
               <div className="Day-Min-Sec">
-                <h1>21</h1>
+                <h1>{countdown.days}</h1>
                 <p>Days</p>
               </div>
               <div className="Day-Min-Sec">
-                <h1>10</h1>
+                <h1>{countdown.hours}</h1>
                 <p>Hrs</p>
               </div>
               <div className="Day-Min-Sec">
-                <h1>55</h1>
+                <h1>{countdown.minutes}</h1>
                 <p>Min</p>
               </div>
               <div className="Day-Min-Sec">
-                <h1>21</h1>
+                <h1>{countdown.seconds}</h1>
                 <p>Secs</p>
               </div>
             </div>
