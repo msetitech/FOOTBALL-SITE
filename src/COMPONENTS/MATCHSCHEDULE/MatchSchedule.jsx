@@ -6,7 +6,6 @@ export default function MatchSchedule() {
   const [schedule, setSchedule] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [editingIndex, setEditingIndex] = useState(null);
-  const [cart, setCart] = useState([]);
   const [newMatch, setNewMatch] = useState({
     type: "home",
     team1: "Inter Miami",
@@ -17,38 +16,35 @@ export default function MatchSchedule() {
     logo2: "",
   });
 
-  // Load schedule simple API
+  // Load schedule from local storage
   useEffect(() => {
     const storedSchedule = JSON.parse(localStorage.getItem("schedule")) || [];
     setSchedule(storedSchedule);
   }, []);
 
-  // Save schedule if its updated
+  // Save schedule to local storage after we updates
   useEffect(() => {
     localStorage.setItem("schedule", JSON.stringify(schedule));
   }, [schedule]);
 
-  // Handle input changes function
+  // Handle input changes for the modal
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewMatch((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Add or update a match
   const saveMatch = () => {
     const updatedMatch = {
       ...newMatch,
       logo1: newMatch.type === "home" ? "images/logo.png" : newMatch.logo1,
     };
     if (editingIndex !== null) {
-      // Edit existing match
       setSchedule((prev) =>
         prev.map((match, index) =>
           index === editingIndex ? updatedMatch : match
         )
       );
     } else {
-      // Add new match
       setSchedule((prev) => [...prev, updatedMatch]);
     }
     setShowModal(false);
@@ -56,7 +52,6 @@ export default function MatchSchedule() {
     resetForm();
   };
 
-  // Reset form fields by clearing everything after updtes
   const resetForm = () => {
     setNewMatch({
       type: "home",
