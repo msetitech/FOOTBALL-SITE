@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getMatches, addMatch, matches } from "./COMPONENTS/API/mockApi";
-import AddMatch from "./AddMatch";
+import AddMatch from "./COMPONENTS/MATCH/ADDMATCH/AddMatch";
 import MatchCard from "./MatchCard";
 import "./App.css";
 import TopMenu from "./COMPONENTS/TOPMENU/TopMenu";
@@ -8,6 +8,7 @@ import Header from "./COMPONENTS/HEADER/Header";
 import AboutSection from "./COMPONENTS/ABOUTSECTION/AboutSection";
 import Trophy from "./COMPONENTS/TROPHY/Trophy";
 import FixtureAndResults from "./COMPONENTS/FIXTUREANDRESULTS/FixtureAndResults";
+import TeamLegend from "./COMPONENTS/TEAMLEGEND/TeamLegend";
 
 function App() {
   const [matches, setMatches] = useState([]);
@@ -75,6 +76,7 @@ function App() {
           <AboutSection />
           <Trophy />
           <FixtureAndResults />
+          <TeamLegend />
 
           {isOpenMetch && <AddMatch onAddMatch={handleAddMatch} />}
           <div className="matches-container">

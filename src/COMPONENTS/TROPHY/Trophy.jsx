@@ -27,8 +27,8 @@ export default function Trophy() {
   return (
     <div>
       <div className="trophyConteiner">
-        {trophys.map((trophy) => (
-          <div className="singleTropy">
+        {trophys.map((trophy, i) => (
+          <div className="singleTropy" key={i}>
             {trophy.trophyIcon}
             <h1>{trophy.trophyNumber}</h1>
             <p>{trophy.trophyName}</p>

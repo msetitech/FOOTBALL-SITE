@@ -131,11 +131,11 @@ header img {
 }
 
 .bottomOfHeader {
-  padding: 0px 6%;
+  padding: 40px 6%;
 }
 
 .bottomOfHeader {
   border-top: 4px solid #f89fc0;
-  padding: 40px;
+  /* padding: 40px; */
   height: auto;
 }

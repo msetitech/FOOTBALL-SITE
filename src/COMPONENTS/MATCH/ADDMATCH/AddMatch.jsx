@@ -17,6 +17,7 @@ function AddMatch({ onAddMatch }) {
         utcDate,
       };
       onAddMatch(newMatch);
+
       setHomeTeam(""); // Clear inputs after submission
       setAwayTeam("");
       setUtcDate("");

@@ -73,8 +73,8 @@ export default function Header() {
         </div>
       </header>
       <div className="bottomOfHeader">
-        {lastMatchesResults.map((match) => (
-          <div className="matchresults">
+        {lastMatchesResults.map((match, i) => (
+          <div className="matchresults" key={i}>
             <div className="TeamLogo">
               <img src={match.logoOne} alt="" />
             </div>

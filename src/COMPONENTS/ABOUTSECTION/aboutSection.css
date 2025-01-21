@@ -14,7 +14,7 @@ body {
 }
 
 .aboutsection {
-  padding: 0px 3%;
+  padding: 0px 6%;
   position: relative;
 }
 .leftAboutSection {
@@ -108,7 +108,7 @@ body {
   display: flex;
   width: 100%;
   background: black;
-  padding: 20px 3%;
+  padding: 20px 6%;
   color: #f89fc0;
   margin-top: 40px;
   justify-content: space-between;
