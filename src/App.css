@@ -111,35 +111,3 @@ li {
   height: 150px;
   object-fit: cover;
 }
-
-/* CART STYLING */
-
-.cart-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.cart-item {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-}
-.cart-item-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-.quantity-controls {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.remove-btn {
-  background-color: red;
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-}

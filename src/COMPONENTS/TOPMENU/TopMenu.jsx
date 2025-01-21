@@ -28,11 +28,7 @@ export default function TopMenu() {
                   Blog
                 </Link>
               </li>
-              <li>
-                <Link to="/shop" className="link">
-                  Shop
-                </Link>
-              </li>
+              <li></li>
             </ul>
           </div>
         </div>
