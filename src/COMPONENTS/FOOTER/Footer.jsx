@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { X } from "@mui/icons-material";
+import { Facebook, Instagram, LinkedIn, X } from "@mui/icons-material";
 const fansComments = [
   {
     name: "Mkongo Jr",
@@ -47,15 +47,49 @@ export default function Footer() {
           </div>
         </div>
         <div className="bottomfooter">
-          <ul>
-            <li>HOME</li>
-            <li>NEWS</li>
-            <li>TEAM</li>
-            <li>SHOP</li>
-            <li>TICKETS</li>
-          </ul>
+          <div className="abouFooter">
+            <p>
+              Inter Miami CF is a professional soccer club based in Fort
+              Lauderdale, Florida, competing in Major League Soccer (MLS).
+            </p>
+          </div>
+          <div className="alllistfooter">
+            <ul>
+              <li>HOME</li>
+              <li>NEWS</li>
+              <li>TEAM</li>
+              <li>SHOP</li>
+              <li>TICKETS</li>
+            </ul>
+            <div className="otherfooter">
+              <ul>
+                <li>CONTACT</li>
+                <li>HELP</li>
+                <li>NEWSLATTER</li>
+              </ul>
+            </div>
+          </div>
+          <div className="footerIcon">
+            <ul>
+              <li>
+                <LinkedIn></LinkedIn>
+              </li>
+              <li>
+                <X></X>
+              </li>
+              <li>
+                <Instagram></Instagram>
+              </li>
+              <li>
+                <Facebook></Facebook>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
+      <div className="receivingright">
+        <p>All Right Received Design By Group 04</p>
+      </div>
     </div>
   );
 }

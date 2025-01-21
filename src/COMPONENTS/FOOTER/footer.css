@@ -1,5 +1,5 @@
 footer {
-  background: black;
+  background: #11181f;
   width: 100%;
   /* color: #f89fc0; */
   color: white;
@@ -7,6 +7,7 @@ footer {
 }
 
 .topFooter {
+  background: #11181f;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 80px;
@@ -58,4 +59,55 @@ footer {
   border-left: 6px solid #f89fc0;
   padding-left: 10px;
   font-weight: 500;
+}
+
+.bottomfooter {
+  margin-top: 40px;
+  height: auto;
+  padding: 30px 0px;
+  border-top: 1px solid gray;
+  display: grid;
+  color: gray;
+  gap: 60px;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.abouFooter ul {
+  flex-direction: column;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+}
+
+.otherfooter {
+  flex-direction: row;
+  margin-top: 40px;
+}
+.footerIcon ul {
+  display: flex;
+  margin-top: 20px;
+  gap: 40px;
+  justify-content: start;
+}
+.alllistfooter {
+  display: flex;
+  flex-direction: column;
+  grid-area: 80px;
+}
+
+.alllistfooter ul {
+  display: flex;
+  gap: 20px;
+}
+
+.receivingright {
+  width: 100%;
+  background: black;
+  padding: 20px 6%;
+  color: gray;
+  text-transform: uppercase;
+  text-align: center;
 }
