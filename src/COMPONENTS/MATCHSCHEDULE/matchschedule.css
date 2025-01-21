@@ -55,6 +55,20 @@
   align-items: center;
 }
 
+.btns button {
+  background: black;
+  color: #f89fc0;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btns button:first-child {
+  background: none;
+  color: black;
+  border: 1px solid black;
+}
+
 .deatilsSchedule {
   font-size: 14px;
   display: flex;
