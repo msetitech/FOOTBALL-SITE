@@ -46,6 +46,15 @@ export default function Footer() {
             ))}
           </div>
         </div>
+        <div className="bottomfooter">
+          <ul>
+            <li>HOME</li>
+            <li>NEWS</li>
+            <li>TEAM</li>
+            <li>SHOP</li>
+            <li>TICKETS</li>
+          </ul>
+        </div>
       </footer>
     </div>
   );
