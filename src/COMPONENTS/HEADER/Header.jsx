@@ -42,7 +42,7 @@ export default function Header() {
       if (difference <= 0) {
         clearInterval(interval);
       } else {
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const days = Math.floor(difference / (500 * 60 * 60 * 24));
         const hours = Math.floor(
           (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         );

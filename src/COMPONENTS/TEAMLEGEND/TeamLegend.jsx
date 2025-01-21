@@ -69,9 +69,11 @@ export default function TeamLegend() {
         <div className="ropcontentTeamLegend">
           <h1>Team Legends</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            maiores dolores sint fuga vel deleniti cumque beatae! Libero,
-            inventore dolorem?
+            "The arrival of Lionel Messi, one of the greatest players in
+            history, further solidified the club's legacy. With stars like
+            these, Inter Miami continues to inspire fans around the world and
+            shape the future of soccer in the region." folowing are some star of
+            the miami
           </p>
         </div>
         <div className="teams">

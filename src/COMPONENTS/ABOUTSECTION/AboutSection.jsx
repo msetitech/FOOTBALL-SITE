@@ -21,25 +21,29 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="rightAboutSection">
-          <h1>
-            About <br /> Inter Miami FootBall Club
-          </h1>
+          <h1>About Inter Miami FootBall Club</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
-            magni distinctio laborum iste quia molestiae labore minima qui
-            consequatur soluta animi nisi rem, aut eius nam saepe ab eum
-            ratione! Iusto quod vitae eveniet excepturi. Dignissimos quae
-            excepturi laudantium!
+            Inter Miami CF is a professional soccer club based in Fort
+            Lauderdale, Florida, competing in Major League Soccer (MLS). Founded
+            in 2018 by international soccer icons David Beckham, Jorge Mas, and
+            Jose Mas, the club represents the vibrant culture of Miami and its
+            diverse communities.
+          </p>
+          <p>
+            Inter Miami was established to bring world-class soccer to South
+            Florida while inspiring the next generation of soccer fans. The
+            club's philosophy centers around a commitment to excellence,
+            teamwork, and a passion for the game. The team plays its home games
+            at DRV PNK Stadium, known for its electric atmosphere and loyal fan
+            base. <br />
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis
-            magni distinctio laborum iste quia molestiae labore minima qui
-            consequatur soluta animi nisi rem, aut eius nam saepe ab eum
-            ratione! Iusto quod vitae eveniet excepturi. Dignissimos quae
-            excepturi laudantium!
+            The club's primary focus is to build a championship-winning team
+            while promoting youth development and community engagement. With a
+            strong emphasis on the team's culture, Inter Miami aims to create an
+            inclusive environment where every fan feels connected to the club.
           </p>
-
           <div className="socialmedia">
             <h3>Social Media</h3>
             <Facebook></Facebook>
