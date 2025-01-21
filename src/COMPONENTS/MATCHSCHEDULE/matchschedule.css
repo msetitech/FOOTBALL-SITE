@@ -2,17 +2,17 @@
   padding: 40px 6%;
 }
 .singleschedule {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: center;
   width: 100%;
-  justify-content: space-between;
   background: #e4dddd;
   padding: 10px;
 }
 
 .singleschedule:nth-child(odd) {
   background: white;
-  height: 130px;
+  height: auto;
 }
 
 .singleschedule h1 {

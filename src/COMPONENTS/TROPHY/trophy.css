@@ -1,0 +1,24 @@
+.trophyConteiner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 20px;
+  height: auto;
+  width: 100%;
+  background: #11181f;
+  padding: 20px 6%;
+  color: #f89fc0;
+  margin-top: 40px;
+}
+.singleTropy h1 {
+  font-size: 14px;
+}
+
+.singleTropy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.singleTropy svg {
+  height: 50px;
+  width: 50px;
+}

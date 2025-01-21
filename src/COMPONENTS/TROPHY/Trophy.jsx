@@ -1,4 +1,5 @@
 import { EmojiEvents, MilitaryTech } from "@mui/icons-material";
+import "./trophy.css";
 import React from "react";
 const trophys = [
   {
