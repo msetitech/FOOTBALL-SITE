@@ -8,7 +8,11 @@ const teamLegends = [
     image: "images/messimage.png",
     name: "Lionel Mess",
     position: "Right Winger",
-    description: "lorem lorem orem",
+    description: `Lionel Andrés "Leo" Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team.`,
+    match: 9,
+    goal: 6,
+    assists: 3,
+    yelloCard: 0,
   },
   {
     id: 2,

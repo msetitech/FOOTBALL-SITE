@@ -16,18 +16,43 @@ export default function MatchSchedule() {
     logo2: "",
   });
 
-  // Load schedule from local storage
+  const initialMatches = [
+    {
+      type: "home",
+      team1: "Inter Miami",
+      team2: "LA Galaxy",
+      time: "2025-01-23T20:00",
+      stadium: "Mkapa Stadium",
+      logo1: "images/logo.png",
+      logo2: "images/logo3.png",
+    },
+    {
+      type: "away",
+      team1: "Inter Miami",
+      team2: "Seattle Sounders",
+      time: "2025-01-25T18:00",
+      stadium: "CenturyLink Field",
+      logo1: "images/logo.png",
+      logo2: "images/logo2.png",
+    },
+  ];
+
+  // Load schedule from localStorage or use initial matches
   useEffect(() => {
-    const storedSchedule = JSON.parse(localStorage.getItem("schedule")) || [];
-    setSchedule(storedSchedule);
+    const storedSchedule = JSON.parse(localStorage.getItem("schedule"));
+    if (storedSchedule && storedSchedule.length > 0) {
+      setSchedule(storedSchedule);
+    } else {
+      setSchedule(initialMatches);
+      localStorage.setItem("schedule", JSON.stringify(initialMatches));
+    }
   }, []);
 
-  // Save schedule to local storage after we updates
+  // Save schedule to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem("schedule", JSON.stringify(schedule));
   }, [schedule]);
 
-  // Handle input changes for the modal
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewMatch((prev) => ({ ...prev, [name]: value }));
@@ -64,6 +89,11 @@ export default function MatchSchedule() {
     });
   };
 
+  const addToCart = (match) => {
+    console.log("Added to cart:", match);
+    alert(`Added to cart: ${match.team1} vs ${match.team2}`);
+  };
+
   return (
     <div className="allschedule">
       <div className="topmetchschdule">
@@ -77,7 +107,7 @@ export default function MatchSchedule() {
         </div>
         <div className="rightSchedule">
           <button onClick={() => setShowModal(true)}>
-            <Add></Add> Add Match
+            <Add /> Add Match
           </button>
         </div>
       </div>
@@ -86,12 +116,12 @@ export default function MatchSchedule() {
           <div className="singleschedule" key={index}>
             <div className="teamsMatching">
               <div className="hometeam">
-                <img src={match.logo1} alt="" />
+                <img src={match.logo1} alt="Home Team Logo" />
                 <h6>{match.team1}</h6>
               </div>
               <h1>VS</h1>
               <div className="awayteam">
-                <img src={match.logo2} alt="" />
+                <img src={match.logo2} alt="Away Team Logo" />
                 <h6>{match.team2}</h6>
               </div>
             </div>
@@ -101,6 +131,7 @@ export default function MatchSchedule() {
               <h3>{match.time}</h3>
             </div>
             <div className="btns">
+              <button onClick={() => addToCart(match)}>Add to Cart</button>
               <button
                 onClick={() => setEditingIndex(index) || setShowModal(true)}
               >
