@@ -13,7 +13,9 @@ function App() {
   return (
     <div>
       <>
-        <TopMenu />
+        <div className="tpmenu">
+          <TopMenu />
+        </div>
         <Header />
         <AboutSection />
         <Trophy />

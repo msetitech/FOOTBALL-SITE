@@ -14,6 +14,7 @@ footer {
 .leftTopFooter {
   height: 600px;
   object-fit: contain;
+  border-radius: 6px;
 }
 
 .leftTopFooter h1 {
