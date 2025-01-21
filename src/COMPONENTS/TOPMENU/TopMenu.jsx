@@ -15,7 +15,7 @@ export default function TopMenu() {
               <li>Home</li>
               <li>About</li>
               <li>Contact</li>
-              <li>Matches</li>
+              <li>Blog</li>
             </ul>
           </div>
         </div>

@@ -1,3 +1,9 @@
+/* GLOBAL CSS */
+
 body {
   font-family: "poppins";
+}
+
+button {
+  padding: 10px;
 }
