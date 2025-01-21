@@ -31,7 +31,7 @@
   margin-top: 40px;
 }
 .table h1 {
-  height: 64px;
+  height: auto;
   background: black;
   color: #f89fc0;
   padding: 10px;
