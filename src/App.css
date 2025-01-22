@@ -13,101 +13,221 @@ li {
   list-style: none;
 }
 
-/* BLOG DESIGN */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
 .blog {
-  margin-top: 100px;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 100px 6%;
 }
 
 .blog h1 {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
   color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: black;
+  color: #f89fc0;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
 }
 
 .blog-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
 .blog-card {
-  background: #fff;
+  background-color: white;
+  border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-5px);
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .blog-image {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 150px;
+  object-fit: contain;
+  background: #f89fc0;
+}
+
+.blog-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .blog-content {
-  padding: 20px;
+  padding: 15px;
 }
 
 .author-section {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .author-avatar {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 10px;
+  border: 2px solid #f89fc0;
 }
 
 .author-info h4 {
   margin: 0;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 14px;
   color: #555;
 }
 
 .author-info p {
   margin: 0;
-  font-size: 0.9rem;
-  color: #888;
+  font-size: 12px;
+  color: #999;
 }
 
 .blog-content h2 {
-  font-size: 1.5rem;
   margin: 10px 0;
+  font-size: 18px;
   color: #333;
+  font-weight: 600;
 }
-
 .blog-content p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
+  margin: 0;
+  color: #6e6e6e;
 }
 
-/* SHOP DESIGN  */
-.shop-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.popup h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
-.product-card {
-  border: 1px solid #ccc;
-  padding: 15px;
-  width: 200px;
-  text-align: center;
-}
-.product-image {
+
+.popup input,
+.popup textarea {
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.popup button {
+  margin-right: 10px;
+}
+
+/* Three-Dot Menu */
+.menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #11181f;
+  color: white;
+  border-radius: 0px 0px 0px 100%;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-options {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background: #11181f;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.menu-options button {
+  display: block;
+  width: 100%;
+  background: 11181f;
+  color: #f89fc0;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menu-options button:hover {
+  background-color: black;
+}
+
+.menu:hover .menu-options {
+  display: block;
+}
+
+/* Overlay for Popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Add Post Popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.popup h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.popup input,
+.popup textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.popup button {
+  margin-right: 10px;
 }
