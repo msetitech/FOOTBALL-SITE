@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./matchschedule.css";
-import { Add } from "@mui/icons-material";
+import { Add, Delete, Edit } from "@mui/icons-material";
 
 export default function MatchSchedule() {
   const [schedule, setSchedule] = useState([]);
@@ -121,22 +121,25 @@ export default function MatchSchedule() {
               </div>
             </div>
             <div className="deatilsSchedule">
-              <h3>{match.type === "home" ? "Home Match" : "Away Match"}</h3>
-              <h2>{match.stadium}</h2>
-              <h3>{match.time}</h3>
+              <div className="toponlyhere">
+                <h3>{match.type === "home" ? "Home Match" : "Away Match"}</h3>
+                <h1>-</h1>
+                <h3>{match.time}</h3>
+              </div>
+              <h2>Stadium: {match.stadium}</h2>
             </div>
             <div className="btns">
               <button
                 onClick={() => setEditingIndex(index) || setShowModal(true)}
               >
-                Edit Match
+                <Edit></Edit>
               </button>
               <button
                 onClick={() =>
                   setSchedule((prev) => prev.filter((_, i) => i !== index))
                 }
               >
-                Delete Match
+                <Delete></Delete>
               </button>
             </div>
           </div>

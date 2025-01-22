@@ -90,3 +90,18 @@ td:nth-child(8) {
   text-align: start;
   padding-left: 20px;
 }
+
+@media screen and (max-width: 600px) {
+  .topmenusFixture ul li {
+    font-size: 11px;
+    width: 100%;
+  }
+
+  .table {
+    font-size: 12px;
+    padding: 2%;
+  }
+  .table h1 {
+    font-size: 14px;
+  }
+}

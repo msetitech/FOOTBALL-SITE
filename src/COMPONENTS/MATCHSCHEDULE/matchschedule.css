@@ -3,11 +3,12 @@
 }
 .singleschedule {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
   width: 100%;
   background: #e4dddd;
   padding: 10px;
+  row-gap: 20px;
 }
 
 .singleschedule:nth-child(odd) {
@@ -15,8 +16,15 @@
   height: auto;
 }
 
+.singleschedule h2 {
+  margin-left: 20px;
+}
 .singleschedule h1 {
   color: gray;
+}
+
+.singleschedule h2 {
+  font-size: 13px;
 }
 
 .hometeam,
@@ -91,7 +99,7 @@
 
 .topmetchschdule {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
   align-items: center;
 }
@@ -153,4 +161,33 @@
 
 .modalContent button:last-child {
   background-color: #dc3545;
+}
+
+.toponlyhere {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+.btns {
+  display: flex;
+  justify-content: end;
+}
+
+@media screen and (max-width: 600px) {
+  .singleschedule {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  .btns button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
