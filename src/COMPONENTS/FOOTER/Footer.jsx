@@ -26,7 +26,7 @@ const fansComments = [
 
 export default function Footer() {
   return (
-    <div>
+    <div className="onlyfooter">
       <footer>
         <div className="topFooter">
           <div className="leftTopFooter">
