@@ -58,12 +58,15 @@ nav ul {
   padding: 4px;
 }
 
-/* .notfication {
+.notfication svg {
   height: 40px;
   width: 40px;
-  background: #f7a7c4c7;
-  border-radius: 100px;
+  color: #f7a7c4c7;
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+  cursor: pointer;
+  background: #11181f;
+  border-radius: 4px;
+  padding: 5px;
+}

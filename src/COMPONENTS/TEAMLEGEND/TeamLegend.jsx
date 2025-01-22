@@ -61,7 +61,7 @@ export default function TeamLegend() {
   };
 
   const togglePopLegend = () => {
-    setActiveLegendCard(activeLegendCard != activeLegendCard);
+    setActiveLegendCard(activeLegendCard !== activeLegendCard);
   };
   return (
     <div>
