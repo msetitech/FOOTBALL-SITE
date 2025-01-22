@@ -53,6 +53,7 @@ body {
   width: 50%;
   border-radius: 6px;
   display: flex;
+  align-items: center;
   padding: 10px;
   z-index: 1;
   display: flex;
@@ -92,4 +93,13 @@ body {
   background: #f89fc0;
   color: #11181f;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .icon {
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+  }
 }

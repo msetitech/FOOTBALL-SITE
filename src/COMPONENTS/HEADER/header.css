@@ -143,3 +143,23 @@ header img {
 .matchresults p {
   font-size: 14px;
 }
+
+.imageHeader h1 {
+  display: none;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .leftcontentHeader {
+    display: none;
+  }
+
+  .imageHeader h1 {
+    display: flex;
+  }
+}
