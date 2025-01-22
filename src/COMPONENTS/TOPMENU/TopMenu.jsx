@@ -1,6 +1,5 @@
 import React from "react";
 import "./topmenu.css";
-import { Search } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 export default function TopMenu() {
@@ -32,9 +31,12 @@ export default function TopMenu() {
             </ul>
           </div>
         </div>
-        <div className="cart">
-          <input type="search" placeholder="search here ...." />
-          <Search></Search>
+        <div className="notfication">
+          {/* <Notifications></Notifications> */}
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+          </span>
         </div>
       </nav>
     </div>

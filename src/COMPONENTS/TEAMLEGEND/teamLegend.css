@@ -9,7 +9,7 @@
   height: auto;
 }
 .singleTeam {
-  height: 400px;
+  height: 380px;
   box-shadow: 1px 2px 10px rgb(165, 165, 165);
   transition: all ease-in-out 0.3s;
 }

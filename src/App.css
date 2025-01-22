@@ -70,14 +70,14 @@ button:hover {
 .blog-image {
   width: 100%;
   height: 150px;
-  object-fit: contain;
+  object-fit: cover;
   background: #f89fc0;
 }
 
 .blog-image img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .blog-content {
@@ -139,14 +139,15 @@ button:hover {
   margin-right: 10px;
 }
 
-/* Three-Dot Menu */
+/* MOre Menu */
 .menu {
   position: absolute;
   top: 0px;
   right: 0px;
-  background-color: #11181f;
-  color: white;
-  border-radius: 0px 0px 0px 100%;
+  background-color: #f89fc0;
+  background-color: #01284d;
+  color: #f89fc0;
+  border-radius: 0px 0px 0px 50%;
 }
 
 .menu button {
@@ -154,7 +155,7 @@ button:hover {
   border: none;
   font-size: 20px;
   cursor: pointer;
-  color: white;
+  color: #f89fc0;
 }
 
 .menu-options {

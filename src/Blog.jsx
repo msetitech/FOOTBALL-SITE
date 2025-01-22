@@ -1,4 +1,4 @@
-import { Delete, Edit } from "@mui/icons-material";
+import { Delete, Edit, More } from "@mui/icons-material";
 import React, { useState, useEffect } from "react";
 
 export default function Blog() {
@@ -106,7 +106,9 @@ export default function Blog() {
                 <h2>{post.title}</h2>
                 <p>{post.content}</p>
                 <div className="menu">
-                  <button>...</button>
+                  <button>
+                    <More></More>
+                  </button>
                   <div className="menu-options">
                     <button onClick={() => handleEditPost(post.id)}>
                       <Edit></Edit>
