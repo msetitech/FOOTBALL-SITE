@@ -161,7 +161,7 @@ header img {
   .imageHeader h1 {
     display: flex;
   }
-  .rightContentHeader {
+  .rightContentHeader h1 {
     font-size: 14px;
   }
 }
