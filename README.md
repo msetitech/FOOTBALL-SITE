@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Hotel Webpage Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple Football webpage interface developed using React. The purpose is to demonstrate component-based architecture, state management,useEffect Props and styling.
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+The interface consists of three main Routing Pages:
 
-### `npm start`
+1. **Home:** Displays the home contents that include.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- - **Home Contents:** Display Name about and Next Match and previous Goal Scored
+- - **About Contents :** Display about football Club
+- - **Trophy Content :** Display winned Trophy
+- - **League Table :** Display League Table
+- - **Team Legend :** Display Team Regend
+- - **Match Schedule :** Display Match Schedule
+- - **Photo Of the day** : Display Photo of the day
+- - **Footer :** Display Footer Content
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **About:** Provides an overview of the Team mission and vission.
 
-### `npm test`
+3. **Blog:** Include Posts of the team.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project is designed to be user-friendly, visually appealing, and easily maintainable, meeting the assignment requirements.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Component-based architecture:
+  - Reusable components for the Footer, Navigation, Home Content, and all other components.
+- Styled using a dedicated `different css file depend on components` file for a cohesive design.
+- Extendable functionalities like adding more components, routing, or API integrations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+FOOTBALL-SITE/
+├── public/
+|__ images
+|__ blogData.json
+├── src/
+│   ├── components/
+│   │   ├── ABOUT
+|   |   |      ├──Ablout.jsx
+|   |   |      ├──Ablout.css
+│   │   ├── FIXTUREANDRESULT
+|   |   |      ├──fixture.css
+|   |   |      ├──Fixture.jsxs
+|   |   |      ├──FixtureComp.jsx
+|   |   |      ├──LeagueTable.jsx
+|   |   |      ├──Results.jsx
+|   |   |      ├──StatsTable.jsx
+│   │   ├── FOOTER
+|   |   |      ├──footer.css
+|   |   |      ├──Footer.jsx
+│   │   ├── HEADER
+|   |   |      ├──header.css
+|   |   |      ├──Header.jsx
+│   │   ├── MATCH
+|   |   |      ├──match.css
+|   |   |      ├──Match.jsx
+│   │   ├── MATCHSCHEDULE
+|   |   |      ├──matchschedule.css
+|   |   |      ├──Matchschedule.jsx
+│   │   ├── TEAMLEGEND
+|   |   |      ├──teamlegend.css
+|   |   |      ├──TeamLegend.jsx
+│   │   ├── TOPMENU
+|   |   |      ├──topmenu.css
+|   |   |      ├──Topmenu.jsx
+│   │   ├── TROPHY
+|   |   |      ├──trophy.css
+|   |   |      ├──Trophy.jsx
+|   |   |──────|
+|   |   |
+│   ├── About.jsx
+│   ├── About.css
+│   ├── Blog.jsx
+│   ├── HomeComponent.jsx
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+|───|
+```
 
-### `npm run eject`
+## Instructions to Run
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/msetitech/FOOTBALL-SITE.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd FOOTBALL-SITE
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+   ```bash
+   npm install react-router-dom
+   ```
+   ```bash
+   npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+   ```
+4. Run the application:
+   ```bash
+   npm start
+   ```
+5. Open your browser and navigate to `http://localhost:3000` to view the webpage.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is for educational purposes and may not be used for commercial purposes without permission.
