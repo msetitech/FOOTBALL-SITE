@@ -92,7 +92,7 @@ export default function TeamLegend() {
                 <div className="detailsViewLegend">
                   <p>
                     <Visibility></Visibility>
-                    Vies Details
+                    View Details
                   </p>
                 </div>
                 <h1>{legend.name}</h1>
