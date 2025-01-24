@@ -153,3 +153,27 @@
   justify-content: center;
   gap: 5px;
 }
+
+@media screen and (max-width: 600px) {
+  .conteinerLegend {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .rightLegendPop {
+    width: 300px;
+    height: auto;
+  }
+
+  .imageholderPopUP {
+    width: 300px;
+    border-radius: 6px 6px 0 0;
+  }
+  .imageholderPopUP img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .statusOnTeam {
+    margin-top: 10px;
+  }
+}
