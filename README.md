@@ -1,4 +1,4 @@
-# Hotel Webpage Interface
+# Football Website Interface
 
 This project is a simple Football webpage interface developed using React. The purpose is to demonstrate component-based architecture, state management,useEffect Props and styling.
 
