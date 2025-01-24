@@ -29,7 +29,7 @@ export default function MatchSchedule() {
     {
       type: "away",
       team1: "Inter Miami",
-      team2: "Seattle Sounders",
+      team2: "Atlanta",
       time: "2025-01-25T18:00",
       stadium: "CenturyLink Field",
       logo1: "images/logo.png",
