@@ -26,7 +26,7 @@ const lastMatchesResults = [
 ];
 
 export default function Header() {
-  const nextMatchDate = new Date("January 25, 2025 18:00:00");
+  const nextMatchDate = new Date("January 28, 2025 18:00:00");
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
@@ -42,7 +42,7 @@ export default function Header() {
       if (difference <= 0) {
         clearInterval(interval);
       } else {
-        const days = Math.floor(difference / (100 * 60 * 60 * 24));
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
         const hours = Math.floor(
           (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         );
