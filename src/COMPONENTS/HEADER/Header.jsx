@@ -26,7 +26,7 @@ const lastMatchesResults = [
 ];
 
 export default function Header() {
-  const nextMatchDate = new Date("January 28, 2025 18:00:00");
+  const nextMatchDate = new Date("February 28, 2025 18:00:00");
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
